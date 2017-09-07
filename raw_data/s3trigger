@@ -1,0 +1,67 @@
+{
+    "Duration": 0.174,
+    "Id": "1-59b16e90-522caf860b15180e7dcc998d",
+    "Segments": [
+        {
+            "Document": {
+                "id": "6bfebc936ac22557",
+                "name": "s3trigger",
+                "start_time": 1504800400.891,
+                "end_time": 1504800400.971,
+                "http": {
+                    "response": {
+                        "status": 202
+                    }
+                },
+                "aws": {
+                    "request_id": "89075699-93e6-11e7-9642-9595bb0547df"
+                },
+                "trace_id": "1-59b16e90-522caf860b15180e7dcc998d",
+                "origin": "AWS::Lambda",
+                "resource_arn": "arn:aws:lambda:us-west-2:185174815983:function:s3trigger",
+                "subsegments": [
+                    {
+                        "id": "23cf766403dd5a69",
+                        "name": "Dwell Time",
+                        "start_time": 1504800400.891,
+                        "end_time": 1504800400.989,
+                        "http": {
+                            "response": {}
+                        }
+                    },
+                    {
+                        "id": "0183c7db9e6bd4ce",
+                        "name": "Attempt #1",
+                        "start_time": 1504800400.989,
+                        "end_time": 1504800401.065,
+                        "http": {
+                            "response": {
+                                "status": 200
+                            }
+                        }
+                    }
+                ]
+            },
+            "Id": "6bfebc936ac22557"
+        },
+        {
+            "Document": {
+                "id": "51447ce908d01148",
+                "name": "s3trigger",
+                "start_time": 1504800401.061,
+                "end_time": 1504800401.061,
+                "parent_id": "0183c7db9e6bd4ce",
+                "aws": {
+                    "function_arn": "arn:aws:lambda:us-west-2:185174815983:function:s3trigger",
+                    "resource_names": [
+                        "s3trigger"
+                    ],
+                    "account_id": "185174815983"
+                },
+                "trace_id": "1-59b16e90-522caf860b15180e7dcc998d",
+                "origin": "AWS::Lambda::Function"
+            },
+            "Id": "51447ce908d01148"
+        }
+    ]
+}

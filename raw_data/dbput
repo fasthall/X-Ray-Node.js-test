@@ -1,0 +1,97 @@
+{
+    "Duration": 0.493,
+    "Id": "1-59b16e95-b324812365a51be0418d76cd",
+    "Segments": [
+        {
+            "Document": {
+                "id": "44497f3377b6ef9b",
+                "name": "dbput",
+                "start_time": 1504800406.021,
+                "end_time": 1504800406.481,
+                "parent_id": "616268c4cdbb46c1",
+                "aws": {
+                    "function_arn": "arn:aws:lambda:us-west-2:185174815983:function:dbput",
+                    "resource_names": [
+                        "dbput"
+                    ],
+                    "account_id": "185174815983"
+                },
+                "trace_id": "1-59b16e95-b324812365a51be0418d76cd",
+                "origin": "AWS::Lambda::Function",
+                "subsegments": [
+                    {
+                        "id": "84f591eba5add0f9",
+                        "name": "DynamoDB",
+                        "start_time": 1504800406.022,
+                        "end_time": 1504800406.461,
+                        "http": {
+                            "response": {
+                                "status": 200
+                            }
+                        },
+                        "aws": {
+                            "operation": "PutItem",
+                            "region": "us-west-2",
+                            "request_id": "C4DLK84834EAE081LNMKI8GO7JVV4KQNSO5AEMVJF66Q9ASUAAJG",
+                            "retries": 0,
+                            "table_name": "xraytest",
+                            "resource_names": [
+                                "xraytest"
+                            ]
+                        },
+                        "namespace": "aws"
+                    }
+                ]
+            },
+            "Id": "44497f3377b6ef9b"
+        },
+        {
+            "Document": {
+                "id": "616268c4cdbb46c1",
+                "name": "dbput",
+                "start_time": 1504800405.991,
+                "end_time": 1504800406.484,
+                "http": {
+                    "response": {
+                        "status": 200
+                    }
+                },
+                "aws": {
+                    "request_id": "8c122606-93e6-11e7-8764-57833ded0cb8"
+                },
+                "trace_id": "1-59b16e95-b324812365a51be0418d76cd",
+                "origin": "AWS::Lambda",
+                "resource_arn": "arn:aws:lambda:us-west-2:185174815983:function:dbput"
+            },
+            "Id": "616268c4cdbb46c1"
+        },
+        {
+            "Document": {
+                "id": "1c5a1b022e4600ac",
+                "name": "DynamoDB",
+                "start_time": 1504800406.022,
+                "end_time": 1504800406.461,
+                "parent_id": "84f591eba5add0f9",
+                "inferred": true,
+                "http": {
+                    "response": {
+                        "status": 200
+                    }
+                },
+                "aws": {
+                    "operation": "PutItem",
+                    "region": "us-west-2",
+                    "request_id": "C4DLK84834EAE081LNMKI8GO7JVV4KQNSO5AEMVJF66Q9ASUAAJG",
+                    "retries": 0,
+                    "table_name": "xraytest",
+                    "resource_names": [
+                        "xraytest"
+                    ]
+                },
+                "trace_id": "1-59b16e95-b324812365a51be0418d76cd",
+                "origin": "AWS::DynamoDB::Table"
+            },
+            "Id": "1c5a1b022e4600ac"
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "Duration": 0.709,
+    "Id": "1-59b16e90-b3af13562d42aec93fd5592e",
+    "Segments": [
+        {
+            "Document": {
+                "id": "41144433559b84d7",
+                "name": "s3put",
+                "start_time": 1504800400.501,
+                "end_time": 1504800400.981,
+                "parent_id": "6e4293dbfe10b5ad",
+                "aws": {
+                    "function_arn": "arn:aws:lambda:us-west-2:185174815983:function:s3put",
+                    "resource_names": [
+                        "s3put"
+                    ],
+                    "account_id": "185174815983"
+                },
+                "trace_id": "1-59b16e90-b3af13562d42aec93fd5592e",
+                "origin": "AWS::Lambda::Function",
+                "subsegments": [
+                    {
+                        "id": "dbf06d40a9c46f78",
+                        "name": "S3",
+                        "start_time": 1504800400.502,
+                        "end_time": 1504800400.844,
+                        "http": {
+                            "response": {
+                                "status": 200
+                            }
+                        },
+                        "aws": {
+                            "operation": "PutObject",
+                            "region": "us-west-2",
+                            "request_id": "0995C3B4F3B867F2",
+                            "retries": 0,
+                            "id_2": "UfTgO93J1vxRgn6Nc//nXNJCYc/cyOLRXeKczTfvKqykR8epLh7sBfKRzxV7Wmmw762bTgT9bSU="
+                        },
+                        "namespace": "aws"
+                    }
+                ]
+            },
+            "Id": "41144433559b84d7"
+        },
+        {
+            "Document": {
+                "id": "6e4293dbfe10b5ad",
+                "name": "s3put",
+                "start_time": 1504800400.276,
+                "end_time": 1504800400.985,
+                "http": {
+                    "response": {
+                        "status": 200
+                    }
+                },
+                "aws": {
+                    "request_id": "88aa1af5-93e6-11e7-b2f7-497c0956e6b3"
+                },
+                "trace_id": "1-59b16e90-b3af13562d42aec93fd5592e",
+                "origin": "AWS::Lambda",
+                "resource_arn": "arn:aws:lambda:us-west-2:185174815983:function:s3put"
+            },
+            "Id": "6e4293dbfe10b5ad"
+        },
+        {
+            "Document": {
+                "id": "09cf3ff60862ff28",
+                "name": "S3",
+                "start_time": 1504800400.502,
+                "end_time": 1504800400.844,
+                "parent_id": "dbf06d40a9c46f78",
+                "inferred": true,
+                "http": {
+                    "response": {
+                        "status": 200
+                    }
+                },
+                "aws": {
+                    "operation": "PutObject",
+                    "region": "us-west-2",
+                    "request_id": "0995C3B4F3B867F2",
+                    "retries": 0,
+                    "id_2": "UfTgO93J1vxRgn6Nc//nXNJCYc/cyOLRXeKczTfvKqykR8epLh7sBfKRzxV7Wmmw762bTgT9bSU="
+                },
+                "trace_id": "1-59b16e90-b3af13562d42aec93fd5592e",
+                "origin": "AWS::S3"
+            },
+            "Id": "09cf3ff60862ff28"
+        }
+    ]
+}

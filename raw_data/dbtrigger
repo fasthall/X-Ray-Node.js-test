@@ -1,0 +1,69 @@
+{
+    "Duration": 1.062,
+    "Id": "1-59b16ecc-8420d9d8663345bb8a9b3ffd",
+    "Segments": [
+        {
+            "Document": {
+                "id": "4fd91b7bb74f1247",
+                "name": "dbtrigger",
+                "start_time": 1504800460.244,
+                "end_time": 1504800461.306,
+                "http": {
+                    "response": {
+                        "status": 200
+                    }
+                },
+                "aws": {
+                    "request_id": "735db646-79b9-4b8f-836a-d2771be39a2c"
+                },
+                "trace_id": "1-59b16ecc-8420d9d8663345bb8a9b3ffd",
+                "origin": "AWS::Lambda",
+                "resource_arn": "arn:aws:lambda:us-west-2:185174815983:function:dbtrigger",
+                "subsegments": [
+                    {
+                        "id": "3ee82b06ae2886eb",
+                        "name": "Attempt #1",
+                        "start_time": 1504800460.256,
+                        "end_time": 1504800461.306,
+                        "http": {
+                            "response": {
+                                "status": 200
+                            }
+                        }
+                    }
+                ]
+            },
+            "Id": "4fd91b7bb74f1247"
+        },
+        {
+            "Document": {
+                "id": "3dc1b60612c81b5e",
+                "name": "dbtrigger",
+                "start_time": 1504800461.242,
+                "end_time": 1504800461.244,
+                "parent_id": "3ee82b06ae2886eb",
+                "aws": {
+                    "function_arn": "arn:aws:lambda:us-west-2:185174815983:function:dbtrigger",
+                    "resource_names": [
+                        "dbtrigger"
+                    ],
+                    "account_id": "185174815983"
+                },
+                "trace_id": "1-59b16ecc-8420d9d8663345bb8a9b3ffd",
+                "origin": "AWS::Lambda::Function",
+                "subsegments": [
+                    {
+                        "id": "5f6012f34ae243f2",
+                        "name": "Initialization",
+                        "start_time": 1504800460.826,
+                        "end_time": 1504800461.207,
+                        "aws": {
+                            "function_arn": "arn:aws:lambda:us-west-2:185174815983:function:dbtrigger"
+                        }
+                    }
+                ]
+            },
+            "Id": "3dc1b60612c81b5e"
+        }
+    ]
+}
